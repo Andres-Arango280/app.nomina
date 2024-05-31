@@ -1,0 +1,48 @@
+/* Styles for the entire page */
+body {
+    background-color: lightblue; /* Light blue background */
+    font-family: sans-serif; /* Default sans-serif font */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+  /* Styles for the header */
+h1 {
+    text-align: center; /* Center the title */
+    
+}
+
+.clean-code {
+    position: relative; /* Enable animation */
+    animation: move-text 10s linear infinite; /* Animation properties */
+}
+
+@keyframes move-text {
+    from { transform: translateX(0px); } /* Start from left */
+    to { transform: translateX(100px); } /* Move to right */
+}
+
+  /* Styles for the list */
+ul {
+   list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list horizontally */
+    width: fit-content; /* Adjust width based on content */
+}
+
+li {
+    margin: 10px 0; /* Add space between list items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color */
+    font-weight: bold; /* Make links bolder */
+}
+
+  a:hover { /* Styles on hover */
+    color: blue; /* Change link color on hover */
+}

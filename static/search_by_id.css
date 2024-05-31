@@ -1,0 +1,41 @@
+/* Styles for search_employee_by_id.html */
+body {
+    font-family: sans-serif; /* Default sans-serif font */
+    background-color: lightblue; /* Light blue background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+h1 {
+    text-align: center; /* Center the title */
+}
+
+form {
+    display: flex; /* Arrange form elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0 auto; /* Center the form horizontally */
+    width: fit-content; /* Adjust width based on content */
+    padding: 20px; /* Add padding around form elements */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+label {
+    margin-bottom: 5px; /* Add space below labels */
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 5px; /* Add padding to input fields and submit button */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add space below input fields */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text for submit button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

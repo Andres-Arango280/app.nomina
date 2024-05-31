@@ -1,0 +1,58 @@
+/* Styles for manage_tables.html */
+
+body {
+    font-family: sans-serif; /* Default sans-serif font */
+    background-color: lightblue; /* Light blue background */
+}
+
+h1 {
+    text-align: center; /* Center the title */
+}
+
+form {
+    display: flex; /* Arrange form elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0 auto; /* Center the form horizontally */
+    width: fit-content; /* Adjust width based on content */
+    padding: 20px; /* Add padding around form elements */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+label {
+    margin-bottom: 5px; /* Add space below labels */
+}
+
+select {
+    padding: 5px; /* Add padding to the select element */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add space below the select element */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text for submit button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 20px; /* Adjust padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 10px; /* Add space above the button */
+}
+
+  .flashed-messages { /* Style for flashed messages area */
+    padding: 10px; /* Add padding to the message container */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 20px; /* Add space above the message container */
+}
+
+  .flashed-messages ul { /* Style for the message list */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+  .flashed-messages li { /* Style for individual messages */
+    margin-bottom: 5px; /* Add space between messages */
+}

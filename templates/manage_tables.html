@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Tables</title>
+    <link rel="stylesheet" href="../static/manage_tables.css">
+</head>
+<body>
+    <h1>Manage Tables</h1>
+    <form action="{{ url_for('manage_tables') }}" method="post">
+        <label for="action">Select Action:</label>
+        <select id="action" name="action">
+            <option value="create_employees">Create Employees Table</option>
+            <option value="create_accruals">Create Accruals Table</option>
+            <option value="create_deductions">Create Deductions Table</option>
+            <option value="delete_employees">Delete Employees Table</option>
+            <option value="delete_accruals">Delete Accruals Table</option>
+            <option value="delete_deductions">Delete Deductions Table</option>
+        </select>
+        <button type="submit">Execute Action</button>
+    </form>
+    <div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>

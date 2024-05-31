@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <h1>Employee Management</h1>
+    <ul>
+        <li><a href="{{ url_for('search_by_id') }}">Search by ID</a></li>
+        <li><a href="{{ url_for('search_by_name') }}">Search by Name and Surname</a></li>
+        <li><a href="{{ url_for('consult_payroll_by_id') }}">Consult Payroll by ID</a></li>
+        <li><a href="{{ url_for('modify_employee') }}">Modify Employee Info</a></li>
+        <li><a href="{{ url_for('insert_user') }}">Insert User</a></li>
+        <li><a href="{{ url_for('manage_tables') }}">Modify, Add and Delete Tables</a></li>
+        <li><a href="{{ url_for('delete_employee') }}">Delete Employee</a></li>
+    </ul>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
+

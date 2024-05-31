@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Employee</title>
+    <link rel="stylesheet" href="../static/delete_employee.css">
+
+</head>
+<body>
+    <h1>Delete Employee</h1>
+    <form method="POST">
+        <label for="idnumber">ID Number:</label>
+        <input type="text" id="idnumber" name="idnumber" required>
+        <input type="submit" value="Delete">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

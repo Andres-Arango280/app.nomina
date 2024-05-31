@@ -1,0 +1,54 @@
+/* Styles for insert_user.html */
+
+body {
+    font-family: sans-serif; /* Default sans-serif font */
+    background-color: lightblue; /* Light blue background */
+}
+
+h1 {
+    text-align: center; /* Center the title */
+}
+
+form {
+    display: flex; /* Arrange form elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0 auto; /* Center the form horizontally */
+    width: fit-content; /* Adjust width based on content */
+    padding: 20px; /* Add padding around form elements */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add space below labels */
+    font-weight: bold; /* Make labels bolder */
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    padding: 5px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add space below input fields */
+    width: 100%; /* Make input fields span full width */
+}
+
+input[type="text"], input[type="number"], input[type="email"]:focus {
+    outline: 2px solid #007bff; /* Blue outline on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Blue shadow on focus */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text for submit button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 20px; /* Adjust padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 10px; /* Add space above the button */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify Employee Information</title>
+    <link rel="stylesheet" href="../static/modify_employee.css">
+</head>
+<body>
+    <h1>Modify Employee Information</h1>
+    <form method="POST" action="{{ url_for('modify_employee') }}">
+        <label for="idnumber">ID Number:</label>
+        <input type="text" id="idnumber" name="idnumber" required>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+        <input type="submit" value="Update Employee">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

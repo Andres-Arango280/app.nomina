@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consult Payroll by ID</title>
+    <link rel="stylesheet" href="../static/consult_payroll_by_id.css">
+</head>
+<body>
+    <h1>Consult Payroll by ID</h1>
+    <form method="POST" action="{{ url_for('consult_payroll_by_id') }}">
+        <label for="idnumber">Enter Employee ID:</label>
+        <input type="text" id="idnumber" name="idnumber" required>
+        <input type="submit" value="Consult Payroll">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

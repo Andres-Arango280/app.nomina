@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll Details</title>
+</head>
+<body>
+    <h1>Payroll Details</h1>
+    <h2>Employee Information</h2>
+    <p>First Name: {{ employee.firstname }}</p>
+    <p>Surname: {{ employee.surname }}</p>
+    <p>ID Number: {{ employee.idnumber }}</p>
+    <p>Mail: {{ employee.mail }}</p>
+
+    <h2>Accruals</h2>
+    <p>Basic Salary: {{ accruals.BasicSalary }}</p>
+    <p>Worked Days: {{ accruals.WorkedDays }}</p>
+    <p>Holiday Time Worked: {{ accruals.HolidayTimeWorked }}</p>
+    <p>Extra Daylight Hours Worked: {{ accruals.ExtraDaylightHoursWorked }}</p>
+    <p>Extra Night Hours Worked: {{ accruals.ExtraNightHoursWorked }}</p>
+    <p>Holiday Extra Daylight Hours Worked: {{ accruals.HolidayExtraDaylightHoursWorked }}</p>
+    <p>Holiday Extra Night Hours Worked: {{ accruals.HolidayExtraNightHoursWorked }}</p>
+    <p>Days Of Disability: {{ accruals.DaysOfDisability }}</p>
+    <p>Leave Days: {{ accruals.LeaveDays }}</p>
+
+    <h2>Deductions</h2>
+    <p>Health Insurance Percentage: {{ deductions.HealthInsurancePercentage }}</p>
+    <p>Pension Contribution Percentage: {{ deductions.PensionContributionPercentage }}</p>
+    <p>Pension Solidarity Fund Contribution Percentage: {{ deductions.PensionSolidarityFundContributionPercentage }}</p>
+
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
