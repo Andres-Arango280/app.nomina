@@ -4,10 +4,9 @@
 
 - Angie Norela Diaz Abaunza
 - Mateo Molina Alvarez
- ## list of other authors for app:
- -Brahian Andres Osorio Arango
- 
- -Jarrison Andres Lopez Roldan
+## List of other authors:
+-brahian andres osorio arnago
+-Jarrison Andres Lopez Roldan
 
 ## What is it?
 
